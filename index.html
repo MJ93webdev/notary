@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body__overlay"></div>
+    <header class="header">
+        <nav class="nav nav--primary">
+            <a href="/"><img src="assets/icon/logo.svg" alt=""></a>
+            <ul role="list" class="nav__list" data-visible="false">
+                <li><a class="nav__link" href="#">Home</a></li>
+                <li><a class="nav__link" href="#">Services</a></li>
+                <li><a class="nav__link" href="#">About</a></li>
+                <li><a class="nav__link" href="#">FAQ</a></li>
+                <li><a class="nav__link" href="#">Testimonial</a></li>
+                <button class="btn btn--primary btn--header btn--header--mobile">Book Session</button>
+            </ul>
+            <button id="navPrimaryToggle" class="nav__toggle"><img src="assets/icon/icon-hamburger.svg" alt="icon-toggle"></button>
+            <button class="btn btn--primary btn--header btn--header--desktop">Book Session</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrapper hero__two-cols">
+                <div class="bg-circle bg-circle--hero"></div>
+
+                <img class="hero__shape hero__shape--cup" src="assets/icon/shape_cup.svg" alt="">
+                <img class="hero__shape hero__shape--star" src="assets/icon/shape_star.svg" alt="">
+                <img class="hero__shape hero__shape--correct" src="assets/icon/shape_correct.svg" alt="">
+                <div class="hero__pattern hero__pattern--1"><img src="assets/img/pattern1.png" alt=""></div>
+                <div class="hero__pattern hero__pattern--2"><img src="assets/img/pattern2.png" alt=""></div>
+                <div class="hero__col-1">
+                    <p class="hero__badge"><img src="assets/icon/thumbs_up_orange_bg.svg" alt="" />Notarizing With Integrity Since 1999</p>
+                    <h1 class="hero__heading">Trusted Notary Services In<br> Your Area</h1>
+                    <p class="hero__paragraph">As licensed and bonded notaries, we offer convenient
+                         notary services for any legal document. 
+                         Our notaries are background-checked professionals who will 
+                        validate and stamp your important paperwork.
+                    </p>
+                    <div class="hero__select-div">
+                        <label class="" for="notaryType">I need a notary for</label> 
+                        <select class="hero__select" id="notaryType">
+                            <option value="realEstate">Real Estate</option>
+                            <option value="realEstate2">Financial</option>
+                            <option value="realEstate3">Legal</option>
+                            <option value="realEstate3">Court</option>
+                            <option value="realEstate3">Wills and Trusts</option>
+                            <option value="realEstate3">Personal</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--primary">Search Notaries</button>
+                </div>
+                <div class="hero__col-2">
+                    <div class="hero__img">
+                        <img  src="assets/img/hero-img.png" alt="image of a notary woman">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="wrapper wrapper--services">
+                <div class="bg-circle bg-circle--faq"></div>
+
+                <div class="services__header">
+                    <h2 class="services__title">OUR SERVICES</h2>
+                    <p class="services__description">
+                        Our expert notaries properly validate and notarize your
+                         paperwork to make sure it meets legal standards.</p>
+                </div>
+
+                <div class="services__grid">
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Real Estate Documents</h3>
+                            <p class="services__card-text">We notarize all real estate documents including closing documents,
+                                 deeds, affidavits of title, 
+                                contracts of sale, mortgages, and deeds of trust.</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Financial Documents</h3>
+                            <p class="services__card-text">Get notarization on financial documents like
+                                 loan applications and agreements, account transfers,
+                                 promissory notes, and other banking/lending paperwork.</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Legal Contracts</h3>
+                            <p class="services__card-text">Any legal contract can be notarized 
+                                including business agreements,
+                                 independent contractor agreements,
+                                 and confidentiality/non-compete contracts.</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Court Documents</h3>
+                            <p class="services__card-text">We handle notarization on court filings such as affidavits,
+                                 depositions, subpoenas, and other legal statements.</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Wills and Trusts</h3>
+                            <p class="services__card-text">Get wills, living wills, healthcare proxies,
+                                 and power of attorney documents notarized by our experts.</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__icon-wrapper">
+                            <img class="services__icon" src="assets/icon/icon_home.png" alt="">
+                        </div>
+                            <h3 class="services__card-title">Personal Documents</h3>
+                            <p class="services__card-text">Notarize passport applications, citizenship documents,
+                                 affidavits of identity, and other personal identification paperwork.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="wrapper">
+                <div class="about__header">
+                    <h2 class="about__title">About Our Notary Agency</h2>
+                    <p class="about__description">Our agency has provided legal
+                         document notarizations for over 24 years, establishing
+                          ourselves as a leader in 
+                        secure and convenient notarization services.
+                    </p>
+                </div>
+                        
+                <div class="about__collage">
+                    <img src="assets/img/Rectangle 1148.png" alt="" class="about__image about__image--chris">
+                    <img src="assets/img/Rectangle 1155.png" alt="" class="about__image about__image--michaella">
+                    <img src="assets/img/Rectangle 1154.png" alt="" class="about__image about__image--john">
+                    <img src="assets/img/Rectangle 1153.png" alt="" class="about__image about__image--sandra">
+                    <img src="assets/img/Rectangle 1150.png" alt="" class="about__image about__image--team">
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="wrapper advantages__two-columns">
+                <div class="bg-circle bg-circle--advantages"></div>
+                <div class="advantages__pattern"><img src="assets/img/pattern2.png" alt=""></div>
+                <div class="advantages__col-1">
+                    <div class="advantages__image-wrapper">
+                        <img class="advantages__image" src="assets/img/man_with_glasses.png" alt="Image of a man with glasses in suit">
+                    </div>
+                </div>
+                <div class="advantages__col-2">
+                    <h2 class="advantages__title">Our experience, licensing and reliability</h2>
+                    <ol role="list" class="advantages__list">
+                        <li class="advantages__list-item">Our veteran notaries have 10+ years experience
+                             each notarizing a wide range of documents
+                        </li>
+                        <li class="advantages__list-item">All our notaries are commissioned by the United 
+                            States and insured with $100,000 service liability coverage
+                        </li>
+                        <li class="advantages__list-item">We undergo continuing education annually to stay
+                             current on regulations and best practices
+                        </li>
+                        <li class="advantages__list-item">As members of the National Notary Association,
+                             we adhere to high ethical and professional standards
+                        </li>
+                        <li class="advantages__list-item">Our strong reputation has made us a trusted partner
+                             for legal and financial institutions statewide
+                        </li>
+                    </ol role="list">
+
+                    <button class="advantages__button btn btn--primary">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+
+            <div class="scroller">
+                <ul role="list" class="scroller-list scroller__inner">
+                    <li class="slide"><img src="assets/img/logo_mckanzie.png" alt="Logo of baker McKenzie" /></li>
+                    <li class="slide"><img src="assets/img/logo_american_bank.png" alt="Logo of bank of America" /></li>
+                    <li class="slide"><img src="assets/img/logo_google.png" alt="Logo of Google" /></li>
+                    <li class="slide"><img src="assets/img/logo_dla.png" alt="Logo of DLA Piper" /></li>
+                    <li class="slide"><img src="assets/img/Microsoft logo.png" alt="Logo of Microsoft" /></li>
+                    <li class="slide"><img src="assets/img/logo_red_cross.png" alt="Logo of Red Cross" /></li>
+                    <li class="slide"><img src="assets/img/logo_mayo.png" alt="Logo of Mayo Clinic" /></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="faq">
+            <div class="wrapper wrapper--faq">
+                <div class="bg-circle bg-circle--faq"></div>
+                <div class="bg-shape--faq"></div>
+
+                <div class="faq__header">
+                    <h2 class="faq__title">Your questions, answered</h2>
+                    <p class="faq__description">Learn about the types of documents we work with,
+                         our notarization process, rates, service areas, and more.
+                         See how we can help with your notarization needs.
+                    </p>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">What types of documents can you notarize?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">Do you offer emergency notary services?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">How does the notarization process work?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">Do I have to come to your office for notarization?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">How much do your services cost?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item ">
+                        <div class="accordion__item-header">What types of documents can you notarize?</div>
+                        <div class="accordion__item-body">
+                            <div class="accordion__item-body-content">
+                                We notarize almost any document including real estate paperwork, affidavits,
+                                contracts, powers of attorney, auto titles, wills, loan documents, and more.
+                                Additionally, we can notarize documents in languages other than English
+                                upon request and with a certified translation provided.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials">
+            <div class="wrapper">
+                <div class="testimonials__header">
+                    <h2 class="testimonials__title">WHAT OUR CLIENTS SAY</h2>
+                    <p class="testimonials__description">See what our past customers have said 
+                        about our convenient, honest, and professional notary services.
+                         We have helped clients from individuals to major corporations.
+                    </p>
+                </div>
+
+                <div class="container swiper">
+                    <div class="testimonials__card-wrapper">
+                        <ul class="testimonials__card-list swiper-wrapper">
+                            <li class="testimonials__card-item swiper-slide">
+                                    <img src="assets/img/testimonial_jane.png" alt="" class="testimonials__card-image">
+                                    <p class="testimonials__card-description">“I've used The Notary Hub for all my real estate transaction notarizations for years.
+                                         Their notaries are always professional and efficient.”</p>
+                                    <h5 class="testimonials__card-title">Jane D., Attorney</h5>
+                            </li>
+                            <li class="testimonials__card-item swiper-slide">
+                                    <img src="assets/img/testimonial_jim.png" alt="" class="testimonials__card-image">
+                                    <p class="testimonials__card-description">"We switched our company's notary work to The Notary Hub last year and
+                                         have been very pleased with their responsiveness and availability."</p>
+                                    <h5 class="testimonials__card-title">Jim K., HR Manager</h5>
+                            </li>
+                            <li class="testimonials__card-item swiper-slide">
+                                    <img src="assets/img/testimonial_david.png" alt="" class="testimonials__card-image">
+                                    <p class="testimonials__card-description">"I needed documents notarized quickly for a loan application. The Notary Hub got
+                                         me in right away and notarized everything accurately."</p>
+                                    <h5 class="testimonials__card-title">David T., Business Owner</h5>
+                            </li>
+                            <li class="testimonials__card-item swiper-slide">
+                                    <img src="assets/img/testimonial_jane.png" alt="" class="testimonials__card-image">
+                                    <p class="testimonials__card-description">“I've used The Notary Hub for all my real estate transaction notarizations for years.
+                                         Their notaries are always professional and efficient.”</p>
+                                    <h5 class="testimonials__card-title">Jane D., Attorney</h5>
+                            </li>
+                            <li class="testimonials__card-item swiper-slide">
+                                    <img src="assets/img/testimonial_jim.png" alt="" class="testimonials__card-image">
+                                    <p class="testimonials__card-description">“I've used The Notary Hub for all my real estate transaction notarizations for years.
+                                         Their notaries are always professional and efficient.”</p>
+                                    <h5 class="testimonials__card-title">Jane D., Attorney</h5>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="swiper-pagination"></div> -->
+                         <div class="testimonials__swiper-buttons">
+                             <div class="swiper-slide-button swiper-button-prev"></div>
+                             <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="wrapper wrapper--cta">
+                <div class="bg-circle bg-circle--cta"></div>
+                <div class="cta__header">
+                    <h2 class="cta__title">Get a personal consultation</h2>
+                    <p class="cta__description">Still have questions? Schedule
+                         a free 30-minute consultation with one of our
+                         expert notaries to discuss your specific document
+                          notarization needs.
+                    </p>
+                    <button class="btn btn--primary">Get Started</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__two-rows">
+                <div class="footer__row-1 footer__two-cols">
+                    <div class="footer__col-1">
+                        <div class="footer__newsletter">
+                            <h4 class="footer__title footer__title--newsletter">Stay In The Loop With Our Newsletter!</h4>
+                            <form class="footer__form" action="">
+                                <label class="footer__newsletter-label" for="email">Enter email address</label>
+                                <input class="footer__newsletter-input" id="email" type="email">
+                                <button class="footer__newsletter-submit">
+                                    <img src="assets/icon/arrow_top-right.svg" alt="submit">
+                                </button>
+                            </form>
+                            <p class="footer__newsletter-description">
+                                Subscribe to our newsletter and unlock a world of exclusive benefits.
+                                 Be the first to know about our latest products, special promotions,
+                                  and exciting updates. Join our community
+                                 of like-minded individuals who share a passion for notary.
+                            </p>
+                        </div>
+
+                        <div class="footer__social-primary">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="footer__col-2">
+                        <div class="footer__product">
+                            <h5 class="footer__title">Product</h5>
+                            <ul role="list" class="footer__list-product">
+                                <li><a href="#">Notary Services</a></li>
+                                <li><a href="#">Online Notarization</a></li>
+                                <li><a href="#">Business Services</a></li>
+                                <li><a href="#">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__information">
+                            <h5 class="footer__title">Information</h5>
+                            <ul role="list" class="footer__list-information">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__company">
+                            <h5 class="footer__title">Company</h5>
+                            <ul role="list" class="footer__list-company">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Our Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row-2">
+                    <div class="footer__copyright">&copy; 2023 All rights reserved- Designed by Teeblix</div>
+                    <ul role="list" class="nav-secondary">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                    <div class="footer__social-secondary">
+                        <a href="#"><img src="assets/icon/icon_facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icon/icon_twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/icon/icon_insta.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icon/icon_youtube.svg" alt="Youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
