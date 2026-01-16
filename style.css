@@ -342,7 +342,6 @@ p{
 .hero__two-cols{
     display: grid;
     position: relative;
-    margin-top: 2.5rem;
 }
 
 .hero__col-1{
@@ -414,6 +413,9 @@ p{
     .hero{
         text-align: center;
     }
+    .hero__img{
+        margin-top: 2rem;
+    }
     .hero__pattern{
         max-width: 180px;
         max-height: 250px;
@@ -449,6 +451,7 @@ p{
     .hero__two-cols{
         grid-template-columns: 1fr 1fr;
         place-items: center;
+        margin-top: 2.5rem;
     }
 }
 
@@ -709,6 +712,12 @@ p{
     }
     .advantages__col-1{
         justify-self: start;
+    }
+}
+@media(width <= 768px){
+    .advantages__button{
+        display: block;
+        margin-inline: auto;
     }
 }
 @media(width <= 1400px){
